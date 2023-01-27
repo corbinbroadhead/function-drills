@@ -81,11 +81,11 @@ console.log(compareNums(13, 21));
 
 //CODE HERE
 function add(c1, b2) {
-  const c1 = Number(c1);
-  const b2 = Number(b2);
+  var c1 = Number(c1);
+  var b2 = Number(b2);
   return c1 + b2;
 }
-var sum = add("was", 10);
+var sum = add("7", 10);
 console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -100,7 +100,7 @@ function exclaim(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
