@@ -254,7 +254,18 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
-
+function bigOrSmall(arr) {
+  const answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big");
+    } else {
+      answers.push("small");
+    } 
+  }
+  return answers;
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -265,8 +276,16 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-
-
+function theEliminator(contestants, loser) {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1);
+    }
+  }
+  return contestants;
+}
+theEliminator(contestants, loser);
+console.log(contestants);
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
@@ -275,7 +294,10 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function capMe(str) {
+  console.log(str.toUpperCase());
+}
+capMe(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -288,6 +310,17 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+function emailCheck(email) {
+  email.trim();
+  if (email.includes("@")) {
+    return 'email verified';
+  } else {
+    return 'must provide a valid email address';
+  }
+}
+console.log(emailCheck("   myemail@email.com "));
+
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
@@ -295,7 +328,15 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function chocFrogs(moneyToSpend) {
+  var frogsPurchased = 0;
+  for (let i = moneyToSpend; i >= 3; i-=3) {
+    frogsPurchased++;
+  }
+  return frogsPurchased;
+}
+let totalFrogs = chocFrogs(33);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
