@@ -11,8 +11,12 @@
   Call the function.
 */
 
-//CODE HERE
 
+//CODE HERE
+function helloWorld () {
+  console.log("Hello, World!");
+}
+helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,7 +25,7 @@
 */
 
 //CODE HERE
-
+const jsNinja = () => "I am a JavaScript ninja!";
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,7 +35,10 @@
 */
 
 //CODE HERE
-
+function printName(input) {
+  console.log(input);
+}
+printName("Cameron");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -44,7 +51,10 @@
 */
 
 //CODE HERE
-
+function greeting(name) {
+  console.log("Hello, " + name);
+} 
+greeting("Corbin");
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -58,7 +68,8 @@
 */
 
 //CODE HERE
-
+const compareNums = (a1, a2) => (a1 > a2 ? a1 : a2);
+console.log(compareNums(13, 21));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -69,7 +80,13 @@
 */
 
 //CODE HERE
-
+function add(c1, b2) {
+  const c1 = Number(c1);
+  const b2 = Number(b2);
+  return c1 + b2;
+}
+var sum = add("was", 10);
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -78,8 +95,8 @@
   Uncomment the correct `console.log` underneath.
 */
 
-const exclaim = function(str) {
-  return str.toUpperCase() + '!!!'
+function exclaim(str) {
+  return str.toUpperCase() + '!!!';
 }
 
 // console.log('arrow')
