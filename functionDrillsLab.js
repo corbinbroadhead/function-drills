@@ -116,7 +116,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -127,7 +127,9 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+var danisTeam = "Sidewinders";
+const exclaimThree = str => str.toUpperCase() + '!!!';
+console.log(exclaimThree(`big win for the ${danisTeam} today`));
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -141,7 +143,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -155,7 +157,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What is up Steven?";
+  } else if (name === "Bryan") {
+    return "Hey Bryan!";
+  } else {
+    return `Cool name, ${name}`;
+  }
+}
+var nameGreeting = nameCheck("Kawhi");
+console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -168,7 +180,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+function faveColorFinder(color) {
+  if (color === "red") {
+    return "red is a great color";
+  } else if (color === "green") {
+    return "green is a solid favorite color";
+  } else if (color === "black") {
+    return "so trendy";
+  } else {
+    return "you need to evaluate your favorite color choice";
+  } 
+} 
+var colorRating = faveColorFinder("green");
+console.log(colorRating);
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -179,7 +203,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function printAllNames(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  } 
+}
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -190,8 +219,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
-
+function thatsOdd(cb) {
+  if (cb % 2 === 0) {
+    return "That's not odd!";
+  } else {
+    return "That is odd indeed!";
+  }
+}
+var oddChecker = thatsOdd(20);
+console.log(oddChecker);
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
@@ -203,7 +239,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+const bestMovie = (title) => `${title} is the best movie ever!`;
+console.log(bestMovie("The Fifth Element"));
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
